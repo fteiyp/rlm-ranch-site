@@ -1,0 +1,28 @@
+El Monte Sagrado
+https://www.elmontesagrado.com/stay/
+El Dorado Hotel:
+https://www.eldoradohotel.com/
+Inn of the Turquoise Bear: Bed and Breakfast in Santa Fe:
+https://www.turquoisebear.com/
+Blame Her Ranch:
+https://blameherranch.com/
+Leaping Deer Ranch:
+https://leapingdeerranch.com/
+Taos Goji Farm:
+https://www.taosgoji.com/
+Ghost Ranch:
+https://www.ghostranch.org/
+
+
+BEST Example:
+https://caprocat.com/
+Instagram for rancholosmilagros:
+instagram.com/rancho.los.milagros/
+
+DONE: get other assets from MOM, like donkey logo and stuff made by claudia, color palette?
+DONE: change tailwind to default to serif font, put PTSerif in that
+
+TODO: hand drawn map showing locations, walking distance
+TODO: fonts - delete unused font styles ... added extra from google fonts
+TODO: 
+

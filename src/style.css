@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TODO fix the Unknown at rule @tailwindcss(unknownAtRules) */
+
+html {
+  scroll-behavior: smooth;
+}
