@@ -19,43 +19,54 @@
   <body class="font-extralight">
     <!-- Navbar -->
     <nav
-      class="navbar flex flex-row justify-evenly items-center w-screen h-28 main-tool-bar opacity-95 fixed text-2xl"
+      class="navbar flex flex-row justify-around md:justify-evenly items-center w-screen h-28 main-tool-bar opacity-95 fixed text-2xl z-30"
     >
+      <div class="sm:hidden w-6"></div>
+      <!-- blank div for even spacing of navbar on mobile -->
       <a
         href="#accomodations"
-        class="w-20 transition duration-500 hover:text-orange-300"
+        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >Accomodations</a
       >
       <a
         href="page.html"
-        class="w-20 transition duration-500 hover:text-orange-300"
+        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >Events</a
       >
       <img src="img/rlm_logo.svg" class="w-12" />
       <a
         href="#accomodations"
-        class="w-20 transition duration-500 hover:text-orange-300"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >Hello</a
       >
       <a
         href="#accomodations"
-        class="w-20 transition duration-500 hover:text-orange-300"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >About</a
       >
+      <!-- burger icon for mobile -->
+      <div class="w-6 h-6 sm:hidden">
+        <div class="w-6 h-1 m-1 bg-white"></div>
+        <div class="w-6 h-1 m-1 bg-white"></div>
+        <div class="w-6 h-1 m-1 bg-white"></div>
+      </div>
     </nav>
 
     <!-- Hero section with background -->
     <div class="h-screen bg-cover bg-[url('./img/main-background.jpg')]">
       <div class="grid h-screen place-items-center bg-black/25">
         <div class="text-center text-white">
-          <h1 class="text-7xl">Rancho Los Milagros</h1>
-          <p>Spectacular Abiquiu Ranch on the Chama River</p>
+          <h1 class="text-7xl slide-text">Rancho Los Milagros</h1>
+          <p class="slide-text">Spectacular Abiquiu Ranch on the Chama River</p>
         </div>
       </div>
     </div>
 
     <!-- 2nd div: Accomodations -->
-    <div id="accomodations" class="hero h-56 bg-texture-dark px-32 py-20">
+    <div
+      id="accomodations"
+      class="hero min-h-56 bg-texture-dark px-14 sm:px-32 py-20 overflow-visible"
+    >
       <h2>Abiquiu, New Mexico</h2>
       <p class="text-3xl">
         A gorgeous house perched above the Chama river on 22 stunning acres in
@@ -67,9 +78,9 @@
 
     <!-- 3rd Div:  -->
     <div id="calendar" class=""></div>
-    <div class="h-80 bg-paper">
-      <h2>Abiquiu, New Mexico</h2>
-      <p>
+    <div class="min-h-80 bg-paper px-14 sm:px-32 py-20">
+      <h2 class="slide-text">Abiquiu, New Mexico</h2>
+      <p class="slide-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex cum
         saepe dolorum repellendus provident voluptates exercitationem doloribus
         possimus est.
@@ -77,7 +88,7 @@
     </div>
 
     <!-- Fourth Div -->
-    <div class="h-56 bg-texture-dark">
+    <div class="min-h-56 bg-texture-dark px-14 sm:px-32 py-20">
       <h2>Abiquiu, New Mexico</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex cum

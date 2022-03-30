@@ -27,6 +27,28 @@ ScrollTrigger.create({
   onLeaveBack: () => gsap.to(".navbar", { backgroundColor: "transparent" }),
 });
 
+const textAnimations = gsap.utils.toArray(".slide-text");
+textAnimations.forEach((box) => {
+  gsap.to(box, {
+    x: 300,
+    scrollTrigger: {
+      trigger: box,
+      scrub: true,
+    },
+  });
+});
+
+gsap.from(".slide-text", {
+  y: -20,
+  duration: 0.8,
+  // scrollTrigger: {
+  //   trigger: ".slide-text",
+  //   toggleActions: "play none none none",
+  //   start: "top bottom",
+  //   end: "bottom top",
+  // },
+});
+
 // TODO - make this work
 // TODO - remove @fullcalendar from the packages if not using them
 // https://sleepy-spire-45235.herokuapp.com/https://example.com (heroku site that should be proxy, not working)
