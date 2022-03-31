@@ -28,25 +28,15 @@ ScrollTrigger.create({
 });
 
 const textAnimations = gsap.utils.toArray(".slide-text");
-textAnimations.forEach((box) => {
-  gsap.to(box, {
-    x: 300,
+textAnimations.forEach((text) => {
+  gsap.to(text, {
+    y: -20,
+    duration: 0.8,
     scrollTrigger: {
-      trigger: box,
-      scrub: true,
+      trigger: text,
+      toggleActions: "play none none none",
     },
   });
-});
-
-gsap.from(".slide-text", {
-  y: -20,
-  duration: 0.8,
-  // scrollTrigger: {
-  //   trigger: ".slide-text",
-  //   toggleActions: "play none none none",
-  //   start: "top bottom",
-  //   end: "bottom top",
-  // },
 });
 
 // TODO - make this work
