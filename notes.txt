@@ -21,6 +21,14 @@ instagram.com/rancho.los.milagros/
 
 DONE: get other assets from MOM, like donkey logo and stuff made by claudia, color palette?
 DONE: change tailwind to default to serif font, put PTSerif in that
+DONE: make the accomodations and events buttons not overlap
+DONE: use gsap(?) to make the mobile burger nav menu open and be animated
+
+TODO: - GSAP "from" animation not working? why does "to" animation work?
+TODO: - make mobile flexbox work (flex direction, image size, etc)
+TODO: - make hamburger menu work ...?
+TODO: - make navbar turn white shortly before disappearing
+TODO: - set up google analytics
 
 TODO: hand drawn map showing locations, walking distance
 TODO: fonts - delete unused font styles ... added extra from google fonts

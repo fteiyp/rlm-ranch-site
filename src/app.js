@@ -39,6 +39,16 @@ textAnimations.forEach((text) => {
   });
 });
 
+gsap.to(".image-zoom", {
+  scale: 1.3,
+  duration: 0.8,
+  scrollTrigger: {
+    trigger: ".image-zoom",
+    scrub: true,
+    markers: true,
+  },
+});
+
 // TODO - make this work
 // TODO - remove @fullcalendar from the packages if not using them
 // https://sleepy-spire-45235.herokuapp.com/https://example.com (heroku site that should be proxy, not working)

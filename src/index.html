@@ -9,6 +9,22 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VXNW5DEKXK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VXNW5DEKXK");
+    </script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
       rel="stylesheet"
@@ -79,9 +95,9 @@
     <!-- 3rd Div:  -->
     <div id="calendar" class=""></div>
     <div class="sm:flex min-h-80 bg-paper px-6 sm:px-6 py-20">
-      <div class="sm:shrink-0">
+      <div class="sm:shrink-0 overflow-hidden">
         <img
-          class="h-48 w-full object-cover sm:h-full sm:w-[500px]"
+          class="image-zoom h-48 w-full object-cover sm:h-full sm:w-[500px]"
           src="img/2.jpg"
         />
       </div>
