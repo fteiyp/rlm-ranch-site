@@ -23,8 +23,10 @@ ScrollTrigger.create({
   onUpdate: (self) => {
     self.direction === -1 ? showAnim.play() : showAnim.reverse();
   },
-  onEnter: () => gsap.to(".navbar", { backgroundColor: "white" }),
-  onLeaveBack: () => gsap.to(".navbar", { backgroundColor: "transparent" }),
+  onEnter: () =>
+    gsap.to(".navbar", { color: "black", backgroundColor: "white" }),
+  onLeaveBack: () =>
+    gsap.to(".navbar", { color: "white", backgroundColor: "transparent" }),
 });
 
 const textAnimations = gsap.utils.toArray(".slide-text");
@@ -40,13 +42,27 @@ textAnimations.forEach((text) => {
 });
 
 gsap.to(".image-zoom", {
-  scale: 1.3,
-  duration: 0.8,
   scrollTrigger: {
     trigger: ".image-zoom",
+    start: "50% bottom", // start: trigger, viewport
+    end: "bottom top", // end:   trigger, viewport
+    scrub: true,
+    // markers: true,
+  },
+  scale: 1.3,
+  duration: 0.8,
+});
+
+gsap.to(".parallax", {
+  scrollTrigger: {
+    start: "center center", // start: trigger, viewport
+    end: "bottom top", // end:   trigger, viewport
+    trigger: ".parallax",
     scrub: true,
     markers: true,
   },
+  y: 500,
+  ease: "none",
 });
 
 // TODO - make this work

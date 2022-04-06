@@ -7,9 +7,6 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -25,8 +22,10 @@
       gtag("config", "G-VXNW5DEKXK");
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
@@ -35,30 +34,38 @@
   <body class="font-extralight">
     <!-- Navbar -->
     <nav
-      class="navbar flex flex-row justify-around md:justify-evenly items-center w-screen h-28 main-tool-bar opacity-95 fixed text-2xl z-30"
+      class="navbar text-white flex flex-row justify-around md:justify-evenly items-center w-screen h-28 main-tool-bar opacity-95 fixed text-2xl z-30"
     >
-      <div class="sm:hidden w-6"></div>
       <!-- blank div for even spacing of navbar on mobile -->
+      <div class="w-6 sm:w-28"></div>
+
+      <!-- logo -->
+      <img src="img/rlm_logo_text.svg" class="w-48" />
+
+      <a
+        href="#about"
+        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >About</a
+      >
       <a
         href="#accomodations"
         class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >Accomodations</a
       >
       <a
-        href="page.html"
-        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        href="weddings.html"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Weddings</a
+      >
+      <a
+        href="#retreats"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Retreats</a
+      >
+      <a
+        href="#events"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >Events</a
-      >
-      <img src="img/rlm_logo.svg" class="w-12" />
-      <a
-        href="#accomodations"
-        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
-        >Hello</a
-      >
-      <a
-        href="#accomodations"
-        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
-        >About</a
       >
       <!-- burger icon for mobile -->
       <div class="w-6 h-6 sm:hidden">
@@ -69,10 +76,18 @@
     </nav>
 
     <!-- 1st section: Hero with background -->
-    <div class="h-screen bg-cover bg-[url('./img/main-background.jpg')]">
-      <div class="grid h-screen place-items-center bg-black/25">
+    <div class="overflow-hidden absolute">
+      <img
+        class="parallax object-cover min-h-screen -z-80"
+        src="./img/main-background.jpg"
+      />
+    </div>
+    <div class="">
+      <div class="grid h-screen place-items-center">
         <div class="text-center text-white">
-          <h1 class="text-7xl slide-text">Rancho Los Milagros</h1>
+          <h1 class="text-5xl slide-text first-letter:text-7xl tracking-widest">
+            WELCOME!
+          </h1>
           <p class="slide-text">Spectacular Abiquiu Ranch on the Chama River</p>
         </div>
       </div>
@@ -102,16 +117,47 @@
         />
       </div>
       <div class="sm:ml-2 p-6 flex justify-center items-center flex-col">
-        <p class="text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex cum
-          saepe dolorum repellendus provident voluptates exercitationem
-          doloribus possimus est.
+        <h3 class="text-4xl italic mb-4">The Space</h3>
+        <p class="text-xl mb-4">
+          The house marries old New Mexico charm--deep set windows, kiva
+          fireplaces, antique and tribal furnishings, and original
+          artworks--with modern comforts and conveniences throughout. The main
+          section of the house is spaciously laid out with large and lovely
+          living and dining room areas, a fully stocked kitchen, an adjacent
+          game playing area, a wonderful screened sunroom, and a laundry and mud
+          room.
+        </p>
+        <p class="text-xl mb-4">
+          There are three large bedrooms in the main section of the house and
+          two additional bedrooms in a second wing. The three bedrooms in the
+          main section of the house each come with a private bathroom. Two of
+          these bedrooms have king beds (convertible to 4 single beds upon
+          request), the third bedroom has a queen bed. The second wing of the
+          house is automatically included for groups of more than 6, or when
+          specifically requested. It includes a bedroom with a king sized bed, a
+          second bedroom with two single beds, a large shared bathroom, a common
+          area with a wood-burning stove and queen size pull-out sofa bed, and
+          two semi-private porch areas.
         </p>
       </div>
     </div>
 
     <!-- Fourth Div -->
     <div class="min-h-56 bg-texture-dark px-6 sm:px-16 py-20">
+      <h2>Testimonials</h2>
+      <p>
+        A truly spectacular home! We can't say enough about how much we enjoyed
+        our short, three-day stay here. The home itself is comfortable and
+        beautifully decorated, and the riverbed, bosque, and gardens gorgeous.
+        Perfectly located for day trips to Santa Fe and Taos, though we found it
+        hard to leave in the mornings! Brooks is an excellent host, always
+        responding quickly. We didn't want to leave and are already planning our
+        next visit.
+      </p>
+    </div>
+
+    <!-- 5 -     -->
+    <div class="min-h-[50vh] px-6 sm:px-16 py-20">
       <h2>Abiquiu, New Mexico</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ex cum

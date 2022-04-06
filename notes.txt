@@ -14,6 +14,12 @@ Ghost Ranch:
 https://www.ghostranch.org/
 
 
+Photographer:
+http://www.alicialucia.com/investment
+TODO: Run this by bcoe
+https://haciendadonaandrea.com/
+TODO: Run this by bcoe
+
 BEST Example:
 https://caprocat.com/
 Instagram for rancholosmilagros:
@@ -23,14 +29,25 @@ DONE: get other assets from MOM, like donkey logo and stuff made by claudia, col
 DONE: change tailwind to default to serif font, put PTSerif in that
 DONE: make the accomodations and events buttons not overlap
 DONE: use gsap(?) to make the mobile burger nav menu open and be animated
+DONE: set up google analytics
+DONE: make navbar turn white shortly before disappearing
+DONE: make hero image parallax by putting it in background and setting to fixed
 
-TODO: - GSAP "from" animation not working? why does "to" animation work?
-TODO: - make mobile flexbox work (flex direction, image size, etc)
-TODO: - make hamburger menu work ...?
-TODO: - make navbar turn white shortly before disappearing
-TODO: - set up google analytics
+
+
+TODO: fix background image overlapping home page text (Abiquiu, New Mexico A gorgeous house perched...) on larger size
+TODO: fix logo (needs to turn black on scroll down as navbar turns white)
+
+
+TODO: add all the content for the RLM site
+TODO: make hamburger menu work ...?
+
+TODO: should you be using a new scroll trigger for each GSAP animation?
+
+TODO: GSAP "from" animation not working? why does "to" animation work?
+TODO: make mobile flexbox work (flex direction, image size, etc)
 
 TODO: hand drawn map showing locations, walking distance
 TODO: fonts - delete unused font styles ... added extra from google fonts
-TODO: 
+
 

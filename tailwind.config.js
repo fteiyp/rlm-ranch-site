@@ -13,7 +13,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: "Spectral, Arial, sans-serif",
+      sans: "Alegreya, Arial, sans-serif",
     },
   },
   plugins: [],
