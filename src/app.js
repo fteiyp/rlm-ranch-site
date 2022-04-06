@@ -50,6 +50,7 @@ gsap.to(".image-zoom", {
     // markers: true,
   },
   scale: 1.3,
+  x: -50,
   duration: 0.8,
 });
 

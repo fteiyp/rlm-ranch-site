@@ -19,6 +19,8 @@ http://www.alicialucia.com/investment
 TODO: Run this by bcoe
 https://haciendadonaandrea.com/
 TODO: Run this by bcoe
+aerial view - https://www.facebook.com/weddingmountain/videos/1071218849678866/
+TODO: Run this by bcoe
 
 BEST Example:
 https://caprocat.com/
@@ -32,11 +34,19 @@ DONE: use gsap(?) to make the mobile burger nav menu open and be animated
 DONE: set up google analytics
 DONE: make navbar turn white shortly before disappearing
 DONE: make hero image parallax by putting it in background and setting to fixed
+DONE: testimonials - add fancy quote styling to quote (follow guide)
+
+
+TODO: add link to about section
+
+TODO: make accomodations, weddings, retreats, and events pages
+TODO: add background pictures for accomodations, weddings, retreats, and events pages
+TODO: add links to accomodations, weddings, retreats, and events pages on index page
 
 
 
 TODO: fix background image overlapping home page text (Abiquiu, New Mexico A gorgeous house perched...) on larger size
-TODO: fix logo (needs to turn black on scroll down as navbar turns white)
+TODO: fix logo (needs to turn black on scroll down as navbar turns white) USE GSAP COLOR CHANGE OF SVG
 
 
 TODO: add all the content for the RLM site
@@ -50,4 +60,5 @@ TODO: make mobile flexbox work (flex direction, image size, etc)
 TODO: hand drawn map showing locations, walking distance
 TODO: fonts - delete unused font styles ... added extra from google fonts
 
+TODO: go through HTML to check for more semantic tags for different (sections, blockquotes)
 

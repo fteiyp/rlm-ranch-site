@@ -31,7 +31,7 @@
     <link href="style.css" rel="stylesheet" />
     <title>Rancho Los Milagros</title>
   </head>
-  <body class="font-extralight">
+  <body class="font-extralight antialiased">
     <!-- Navbar -->
     <nav
       class="navbar text-white flex flex-row justify-around md:justify-evenly items-center w-screen h-28 main-tool-bar opacity-95 fixed text-2xl z-30"
@@ -48,26 +48,26 @@
         >About</a
       >
       <a
-        href="#accomodations"
-        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        href="accomodations.html"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >Accomodations</a
       >
       <a
         href="weddings.html"
-        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >Weddings</a
       >
       <a
-        href="#retreats"
+        href="retreats.html"
         class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >Retreats</a
       >
       <a
-        href="#events"
+        href="events.html"
         class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
         >Events</a
       >
-      <!-- burger icon for mobile -->
+      <!-- burger menu for mobile -->
       <div class="w-6 h-6 sm:hidden">
         <div class="w-6 h-1 m-1 bg-white"></div>
         <div class="w-6 h-1 m-1 bg-white"></div>
@@ -93,21 +93,33 @@
       </div>
     </div>
 
-    <!-- 2nd div: Accomodations -->
+    <!-- 2nd div: About -->
     <div
-      id="accomodations"
-      class="hero min-h-56 bg-texture-dark px-6 sm:px-16 py-20 overflow-visible"
+      id="about"
+      class="hero min-h-56 bg-texture-dark px-6 sm:px-24 py-12 overflow-visible"
     >
       <h2>Abiquiu, New Mexico</h2>
-      <p class="text-2xl">
+      <p class="text-xl">
         A gorgeous house perched above the Chama river on 22 stunning acres in
         the heart of Abiquiu. With gardens and fruit trees, an old growth
         "bosque," direct river access, and beautiful views, this is a magical
         spot for relaxation, renewal, and exploration any time of the year.
       </p>
+
+      <div class="flex h-36 items-center justify-center relative m-4">
+        <img class="w-32 mx-10" src="img/decorations_1.svg" />
+
+        <button
+          class="p-4 border-solid text-3xl transition-all duration-700 hover:bg-orange-200"
+        >
+          <img class="w-36" src="img/circle_button.svg" />
+        </button>
+        <img class="w-32 mx-10 scale-x-[-1]" src="img/decorations_1.svg" />
+      </div>
     </div>
 
     <!-- 3rd Div:  -->
+    <!-- TODO: ADD CALENDAR STUFF -->
     <div id="calendar" class=""></div>
     <div class="sm:flex min-h-80 bg-paper px-6 sm:px-6 py-20">
       <div class="sm:shrink-0 overflow-hidden">
@@ -127,33 +139,39 @@
           game playing area, a wonderful screened sunroom, and a laundry and mud
           room.
         </p>
-        <p class="text-xl mb-4">
-          There are three large bedrooms in the main section of the house and
-          two additional bedrooms in a second wing. The three bedrooms in the
-          main section of the house each come with a private bathroom. Two of
-          these bedrooms have king beds (convertible to 4 single beds upon
-          request), the third bedroom has a queen bed. The second wing of the
-          house is automatically included for groups of more than 6, or when
-          specifically requested. It includes a bedroom with a king sized bed, a
-          second bedroom with two single beds, a large shared bathroom, a common
-          area with a wood-burning stove and queen size pull-out sofa bed, and
-          two semi-private porch areas.
-        </p>
       </div>
     </div>
 
     <!-- Fourth Div -->
     <div class="min-h-56 bg-texture-dark px-6 sm:px-16 py-20">
-      <h2>Testimonials</h2>
-      <p>
-        A truly spectacular home! We can't say enough about how much we enjoyed
-        our short, three-day stay here. The home itself is comfortable and
-        beautifully decorated, and the riverbed, bosque, and gardens gorgeous.
-        Perfectly located for day trips to Santa Fe and Taos, though we found it
-        hard to leave in the mornings! Brooks is an excellent host, always
-        responding quickly. We didn't want to leave and are already planning our
-        next visit.
-      </p>
+      <div class="flex flex-row justify-center items-center">
+        <img class="w-44 scale-x-[-1] mx-8" src="img/decorations_1.svg" />
+
+        <div class="w-[50%]">
+          <h2 class="text-4xl italic mb-4">Testimonials</h2>
+          <div class="relative">
+            <img
+              class="w-6 opacity-30 absolute top-[-10px] left-[-35px]"
+              src="img/quotes.svg"
+            />
+            <p class="">
+              A truly spectacular home! We can't say enough about how much we
+              enjoyed our short, three-day stay here. The home itself is
+              comfortable and beautifully decorated, and the riverbed, bosque,
+              and gardens gorgeous. Perfectly located for day trips to Santa Fe
+              and Taos, though we found it hard to leave in the mornings! Brooks
+              is an excellent host, always responding quickly. We didn't want to
+              leave and are already planning our next visit.
+            </p>
+            <img
+              class="w-6 opacity-30 absolute bottom-[-10px] right-[-15px] scale-x-[-1] scale-y-[-1]"
+              src="img/quotes.svg"
+            />
+          </div>
+        </div>
+
+        <img class="w-44 mx-8" src="img/decorations_1.svg" />
+      </div>
     </div>
 
     <!-- 5 -     -->
