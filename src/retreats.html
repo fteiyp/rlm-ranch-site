@@ -3,9 +3,143 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
     <title>Retreats</title>
   </head>
-  <body>
-    <h1>Retreats</h1>
+  <body class="font-extralight antialiased">
+    <!-- Navbar -->
+    <nav
+      class="navbar text-white flex flex-row justify-around md:justify-evenly items-center w-screen h-28 main-tool-bar fixed text-2xl z-30"
+    >
+      <!-- blank div for even spacing of navbar on mobile -->
+      <div class="w-6 sm:w-28"></div>
+
+      <!-- logo -->
+      <a href="index.html">
+        <img src="img/rlm_logo_text.svg" class="w-48" />
+      </a>
+
+      <a
+        href="index.html#about"
+        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >About</a
+      >
+      <a
+        href="index.html#accomodations"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Accomodations</a
+      >
+      <a
+        href="weddings.html"
+        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Weddings</a
+      >
+      <a
+        href="retreats.html"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Retreats</a
+      >
+      <a
+        href="events.html"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Events</a
+      >
+      <!-- burger menu for mobile -->
+      <div class="w-6 h-6 sm:hidden">
+        <div class="w-6 h-1 m-1 bg-white"></div>
+        <div class="w-6 h-1 m-1 bg-white"></div>
+        <div class="w-6 h-1 m-1 bg-white"></div>
+      </div>
+    </nav>
+
+    <!-- 1st section: Hero with background -->
+    <div class="overflow-hidden absolute">
+      <img class="parallax object-cover min-h-screen -z-80" src="./img/5.jpg" />
+    </div>
+    <div class="">
+      <div class="grid h-screen place-items-center">
+        <div class="text-center text-white">
+          <h1 class="text-5xl slide-text first-letter:text-7xl tracking-widest">
+            RETREATS
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd div: About -->
+    <div
+      id="about"
+      class="hero min-h-56 bg-texture-dark px-6 sm:px-24 py-12 overflow-visible"
+    >
+      <h1>RETREATS</h1>
+      <p class="text-xl mb-4 mt-8">
+        There are three large bedrooms in the main section of the house and two
+        additional bedrooms in a second wing. The three bedrooms in the main
+        section of the house each come with a private bathroom. Two of these
+        bedrooms have king beds (convertible to 4 single beds upon request), the
+        third bedroom has a queen bed. The second wing of the house is
+        automatically included for groups of more than 6, or when specifically
+        requested. It includes a bedroom with a king sized bed, a second bedroom
+        with two single beds, a large shared bathroom, a common area with a
+        wood-burning stove and queen size pull-out sofa bed, and two
+        semi-private porch areas.
+      </p>
+      <div class="flex h-36 items-center justify-center relative m-4">
+        <img class="w-32 mx-10" src="img/decorations_1.svg" />
+
+        <button
+          class="p-4 border-solid text-3xl transition-all duration-700 hover:bg-orange-200"
+        >
+          <img class="w-36" src="img/circle_button.svg" />
+        </button>
+        <img class="w-32 mx-10 scale-x-[-1]" src="img/decorations_1.svg" />
+      </div>
+    </div>
+
+    <!-- 5 - FOOTER -->
+    <footer class="bg-texture-dark min-h-[30vh] px-6 sm:px-16 py-20">
+      <div class="flex justify-around items-center">
+        <div>
+          <h2 class="text-center mb-4">SOCIAL</h2>
+          <div class="flex mb-3 justify-center">
+            <a href="https://www.instagram.com/rancho.los.milagros/?hl=en">
+              <img class="w-8" src="img/instagram-brands.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-center mb-4">RENTALS</h2>
+          <div class="flex flex-row justify-center">
+            <a class="mr-4" href="https://www.vrbo.com/893724">
+              <img class="h-8" src="img/VRBO.svg" />
+            </a>
+            <a
+              href="https://www.airbnb.com/rooms/13564786?source_impression_id=p3_1649376142_kQf7km49xKvzbVV8"
+            >
+              <img class="h-8" src="img/airbnb.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-center mb-4">CONTACT</h2>
+          <p>rancho.los.milagros@gmail.com</p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center mt-12">
+        Copyright © Rancho Los Milagros 2022 | Site by Reid Shea
+      </div>
+    </footer>
   </body>
+  <script src="./app.js" type="module"></script>
 </html>

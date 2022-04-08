@@ -35,13 +35,16 @@ DONE: set up google analytics
 DONE: make navbar turn white shortly before disappearing
 DONE: make hero image parallax by putting it in background and setting to fixed
 DONE: testimonials - add fancy quote styling to quote (follow guide)
+DONE: add footer
+DONE: make accomodations, weddings, retreats, and events pages
+DONE: add background pictures for accomodations, weddings, retreats, and events pages
+DONE: add links to accomodations, weddings, retreats, and events pages on index page
 
+TODO: add content for accomodations, weddings, retreats, events
 
 TODO: add link to about section
 
-TODO: make accomodations, weddings, retreats, and events pages
-TODO: add background pictures for accomodations, weddings, retreats, and events pages
-TODO: add links to accomodations, weddings, retreats, and events pages on index page
+TODO: fix logo to be SVG for all pages (events, accomodations, etc)
 
 
 

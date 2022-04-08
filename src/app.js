@@ -9,13 +9,12 @@ import iCalendarPlugin from "@fullcalendar/icalendar";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const showAnim = gsap
-  .from(".main-tool-bar", {
-    yPercent: -100,
-    paused: true,
-    duration: 0.2,
-  })
-  .progress(1);
+const showAnim = gsap.from(".main-tool-bar", {
+  yPercent: -100,
+  // paused: true,
+  // duration: 0.2,
+});
+// .progress(1);
 
 ScrollTrigger.create({
   start: "5% top",
@@ -23,10 +22,16 @@ ScrollTrigger.create({
   onUpdate: (self) => {
     self.direction === -1 ? showAnim.play() : showAnim.reverse();
   },
-  onEnter: () =>
-    gsap.to(".navbar", { color: "black", backgroundColor: "white" }),
-  onLeaveBack: () =>
-    gsap.to(".navbar", { color: "white", backgroundColor: "transparent" }),
+  onEnter: () => {
+    gsap.to(".navbar", { color: "black", backgroundColor: "white" });
+    gsap.to(".st0", { fill: "black" });
+    gsap.to(".st1", { fill: "#FF5B00" });
+  },
+  onLeaveBack: () => {
+    gsap.to(".navbar", { color: "white", backgroundColor: "transparent" });
+    gsap.to(".st0", { fill: "white" });
+    gsap.to(".st1", { fill: "white" });
+  },
 });
 
 const textAnimations = gsap.utils.toArray(".slide-text");
