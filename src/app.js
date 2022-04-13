@@ -9,12 +9,13 @@ import iCalendarPlugin from "@fullcalendar/icalendar";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const showAnim = gsap.from(".main-tool-bar", {
-  yPercent: -100,
-  // paused: true,
-  // duration: 0.2,
-});
-// .progress(1);
+const showAnim = gsap
+  .from(".main-tool-bar", {
+    yPercent: -100,
+    paused: true,
+    duration: 0.2,
+  })
+  .progress(1);
 
 ScrollTrigger.create({
   start: "5% top",

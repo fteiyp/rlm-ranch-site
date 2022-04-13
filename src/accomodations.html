@@ -1,0 +1,153 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Accomodations</title>
+  </head>
+  <body class="font-extralight antialiased">
+    <!-- Navbar -->
+    <nav
+      class="navbar text-white flex flex-row justify-around md:justify-evenly items-center w-screen h-28 main-tool-bar fixed text-2xl z-30"
+    >
+      <!-- blank div for even spacing of navbar on mobile -->
+      <div class="w-6 sm:w-28"></div>
+
+      <!-- logo -->
+      <a href="index.html">
+        <img src="img/rlm_logo_text.svg" class="w-48" />
+      </a>
+
+      <a
+        href="index.html#about"
+        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >About</a
+      >
+      <a
+        href="accomodations.html"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Accomodations</a
+      >
+      <a
+        href="weddings.html"
+        class="pl-6 w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Weddings</a
+      >
+      <a
+        href="retreats.html"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Retreats</a
+      >
+      <a
+        href="events.html"
+        class="w-1/5 text-center transition duration-500 hover:text-orange-300 hidden sm:block"
+        >Events</a
+      >
+      <!-- burger menu for mobile -->
+      <div class="w-6 h-6 sm:hidden">
+        <div class="w-6 h-1 m-1 bg-white"></div>
+        <div class="w-6 h-1 m-1 bg-white"></div>
+        <div class="w-6 h-1 m-1 bg-white"></div>
+      </div>
+    </nav>
+
+    <!-- 1st section: Hero with background -->
+    <div class="overflow-hidden absolute">
+      <img class="parallax object-cover min-h-screen -z-80" src="./img/1.jpg" />
+    </div>
+    <div class="">
+      <div class="grid h-screen place-items-center">
+        <div class="text-center text-white">
+          <h1 class="text-5xl slide-text first-letter:text-7xl tracking-widest">
+            ACCOMODATIONS
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2nd div: About -->
+    <div
+      id="about"
+      class="hero min-h-56 bg-texture-dark px-6 sm:px-24 py-12 overflow-visible"
+    >
+      <h1>Accomodations</h1>
+      <p class="text-xl mb-4 mt-8">
+        There are three large bedrooms in the main section of the house and two
+        additional bedrooms in a second wing. The three bedrooms in the main
+        section of the house each come with a private bathroom. Two of these
+        bedrooms have king beds (convertible to 4 single beds upon request), the
+        third bedroom has a queen bed. The second wing of the house is
+        automatically included for groups of more than 6, or when specifically
+        requested. It includes a bedroom with a king sized bed, a second bedroom
+        with two single beds, a large shared bathroom, a common area with a
+        wood-burning stove and queen size pull-out sofa bed, and two
+        semi-private porch areas.
+      </p>
+      <div class="flex h-36 items-center justify-center relative m-4">
+        <img class="w-32 mx-10" src="img/decorations_1.svg" />
+
+        <button
+          class="p-4 border-solid text-3xl transition-all duration-700 hover:bg-orange-200"
+        >
+          <img class="w-36" src="img/circle_button.svg" />
+        </button>
+        <img class="w-32 mx-10 scale-x-[-1]" src="img/decorations_1.svg" />
+      </div>
+    </div>
+
+    <!-- 5 - FOOTER -->
+    <footer class="min-h-[30vh] px-6 sm:px-16 py-20">
+      <div class="flex justify-around items-center">
+        <div>
+          <h2>SOCIAL</h2>
+          <div class="flex mb-3">
+            <a href="https://www.facebook.com">
+              <svg
+                class="w-6 mr-3"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </a>
+            <a href="">
+              <svg
+                class="w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h2>ADDRESS</h2>
+          <p>447 CR 155 Abiquiu</p>
+          <p>NM 87510</p>
+        </div>
+      </div>
+      <div class="flex justify-center items-center mt-12">
+        Copyright © Rancho Los Milagros 2022 | Site by Reid Shea
+      </div>
+    </footer>
+  </body>
+  <script src="./app.js" type="module"></script>
+</html>
