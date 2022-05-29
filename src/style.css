@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 /* TODO fix the Unknown at rule @tailwindcss(unknownAtRules) */
+/* Using all caps for custom CSS to distinguish from tailwind */
 
 html {
   scroll-behavior: smooth;
+}
+
+.HERO {
+  background-image: url("./img/main-background.jpg");
+  background-size: cover;
 }

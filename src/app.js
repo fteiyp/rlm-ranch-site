@@ -2,7 +2,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 
-// TODO Calendar stuff - delete if not using
+// TODO: Calendar stuff - delete if not using
 import { Calendar } from "@fullcalendar/core";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import iCalendarPlugin from "@fullcalendar/icalendar";
@@ -60,17 +60,20 @@ gsap.to(".image-zoom", {
   duration: 0.8,
 });
 
-gsap.to(".parallax", {
-  scrollTrigger: {
-    start: "center center", // start: trigger, viewport
-    end: "bottom top", // end:   trigger, viewport
-    trigger: ".parallax",
-    scrub: true,
-    // markers: true,
-  },
-  y: 500,
-  ease: "none",
-});
+// experimenting with GSAP parallax - looks kind of choppy
+
+// gsap.to(".parallax", {
+//   scrollTrigger: {
+//     start: "center center", // start: trigger, viewport
+//     end: "bottom top", // end:   trigger, viewport
+//     trigger: ".parallax",
+//     scrub: true,
+//     // markers: true,
+//   },
+//   y: 500,
+//   delay: 300,
+//   ease: "none",
+// });
 
 // TODO - make this work
 // TODO - remove @fullcalendar from the packages if not using them
