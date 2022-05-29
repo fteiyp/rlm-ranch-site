@@ -66,7 +66,7 @@ gsap.to(".parallax", {
     end: "bottom top", // end:   trigger, viewport
     trigger: ".parallax",
     scrub: true,
-    markers: true,
+    // markers: true,
   },
   y: 500,
   ease: "none",
