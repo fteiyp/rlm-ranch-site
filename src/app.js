@@ -3,17 +3,18 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 
 // TODO: Calendar stuff - delete if not using
-import { Calendar } from "@fullcalendar/core";
-import dayGridPlugin from "@fullcalendar/daygrid";
-import iCalendarPlugin from "@fullcalendar/icalendar";
+// import { Calendar } from "@fullcalendar/core";
+// import dayGridPlugin from "@fullcalendar/daygrid";
+// import iCalendarPlugin from "@fullcalendar/icalendar";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// ------------------------ NAVbar logo animation ------------------------
 const showAnim = gsap
   .from(".main-tool-bar", {
     yPercent: -100,
     paused: true,
-    duration: 0.2,
+    // duration: 0.2,
   })
   .progress(1);
 

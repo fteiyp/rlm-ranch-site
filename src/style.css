@@ -8,8 +8,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-.HERO {
-  background-image: url("./img/main-background.jpg");
-  background-size: cover;
-}
